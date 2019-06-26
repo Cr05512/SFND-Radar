@@ -26,4 +26,14 @@ About the CA-CFAR implementation:
 8. The results are then plotted  
 9. A later tuning of the offset and the Training/Guarding cells number is required in order to  
    achieve an optimal performance of the CFAR (the offset can be chosen by giving a conservative value  
-   which raises the theshold over the noise peaks in figure 2).
+   which raises the theshold over the noise peaks in figure 2).  
+
+About the selection of Training, Guard cells and offset:  
+
+The chosen parameters are the results of what has been said in the previous argumentation. By trying different  
+values it has been possible to achive a satisfying performance similar to the one shown in the walkthrough.  
+
+About the suppression of the non-thresholded cells at the edges:  
+
+It is sufficient to initialize the CFAR_sig matrix to all zeros with the dimension of the RDM and by  
+indexing it correctly.
