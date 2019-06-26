@@ -104,6 +104,7 @@ figure ('Name','Range from First FFT')
  % plot FFT output 
 plot(sig_fft); grid minor
 axis ([0 200 0 1]);
+xlabel('measured range');
 
 
 
@@ -134,7 +135,7 @@ RDM = 10*log10(RDM) ;
 %dimensions
 doppler_axis = linspace(-100,100,Nd);
 range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
-figure,surf(doppler_axis,range_axis,RDM);
+figure('Name','Range Doppler Map'),surf(doppler_axis,range_axis,RDM);
 
 %% CFAR implementation
 
@@ -220,7 +221,7 @@ end
 % *%TODO* :
 %display the CFAR output using the Surf function like we did for Range
 %Doppler Response output.
-figure,surf(doppler_axis,range_axis,CFAR_sig);
+figure('Name','CA-CFAR Filtered RDM'),surf(doppler_axis,range_axis,CFAR_sig);
 colorbar;
 
 
