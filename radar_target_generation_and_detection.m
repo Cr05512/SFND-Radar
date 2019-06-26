@@ -161,7 +161,7 @@ offset = 1.35;
 
 % *%TODO* :
 %Create a vector to store noise_level for each iteration on training cells
-noise_level = zeros((Nr/2-(2*Tcd+2*Gcd)),(Nd-(2*Tcr+2*Gcr)));
+noise_level = zeros(Nr/2-2*(Tcd+Gcd),Nd-2*(Tcr+Gcr));
 gridSize = (2*Tcr+2*Gcr+1)*(2*Tcd+2*Gcd+1);
 trainingCellsNum = gridSize-(2*Gcr+1)*(2*Gcd+1);
 
@@ -215,7 +215,7 @@ end
  
 
 
-
+%not necessary
 
 
 
