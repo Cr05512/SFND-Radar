@@ -30,10 +30,10 @@ About the CA-CFAR implementation:
 
 About the selection of Training, Guard cells and offset:  
 
-The chosen parameters are the results of what has been said in the previous argumentation. By trying different  
-values it has been possible to achive a satisfying performance similar to the one shown in the walkthrough.  
+  The chosen parameters are the results of what has been said in the previous argumentation. By trying different  
+  values it has been possible to achive a satisfying performance similar to the one shown in the walkthrough.  
 
 About the suppression of the non-thresholded cells at the edges:  
 
-It is sufficient to initialize the CFAR_sig matrix to all zeros with the dimension of the RDM and by  
-indexing it correctly.
+   It is sufficient to initialize the CFAR_sig matrix to all zeros with the dimension of the RDM and by  
+   indexing it correctly.
