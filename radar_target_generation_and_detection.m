@@ -63,11 +63,7 @@ td=zeros(1,length(t));
 
 for i=1:length(t)         
     %For each time stamp update the Range of the Target for constant velocity. 
-    if(i>1)
-        r_t(i) = x0 + v0*t(i);
-    else
-        r_t(i) = x0;
-    end
+    r_t(i) = x0 + v0*t(i);
     td(i) = 2*r_t(i)/c;
     %For each time sample we need update the transmitted and
     %received signal. 
