@@ -19,7 +19,7 @@ About the CA-CFAR implementation:
 5. Initialization of the CFAR-filtered RDM matrix as all zeros (this will avoid padding later)  
 6. By sliding the patch over the RDM (considering margins), the whole patch is converted  
    with db2pow. Now the subpatch regarding CUT and Guard cells is set to zero in order to give  
-   no contribution to the average. By dividing now for the number of Training cells the average  
+   no contribution to the sum. By dividing now for the number of Training cells the average  
    is computed. Hence, the noise level is calculated by a backward conversion to Decibel (pow2db)  
 7. The signal theshold is now given and by comparing it with the CUT level the CFAR_sig matrix  
    is built  
